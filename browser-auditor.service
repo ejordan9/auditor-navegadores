@@ -1,0 +1,12 @@
+[Unit]
+Description=Browser Performance Benchmark Daemon for AI Audits
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 %h/Proyectos/auditor-navegadores/browser_daemon.py zen
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target
