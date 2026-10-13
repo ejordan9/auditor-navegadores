@@ -4,7 +4,7 @@ After=graphical-session.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/python3 %h/Proyectos/auditor-navegadores/browser_daemon.py zen
+ExecStart=/usr/bin/python3 %h/Proyectos/auditor-navegadores/browser_daemon.py helium
 Restart=always
 RestartSec=10
 
